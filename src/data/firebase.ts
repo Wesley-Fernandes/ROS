@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
+import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
 if (!process.env.NEXT_PUBLIC_FIREBASE_API_KEY) {
   throw new Error('Missing NEXT_PUBLIC_FIREBASE_API_KEY');
@@ -25,3 +26,5 @@ const firebaseConfig = {
 
 export const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+export const auth = getAuth(app);
+export const provider = new GoogleAuthProvider();
