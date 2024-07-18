@@ -23,7 +23,6 @@ export default function page() {
       if (articles.length == 0) {
         return [];
       } else {
-        console.log(articles);
         return articles;
       }
     },
@@ -34,7 +33,6 @@ export default function page() {
 
   const { toast } = useToast();
 
-  console.log(data);
   return (
     <section className="flex p-2 h-[calc(100vh-7rem)] w-screen overflow-x-hidden">
       {isLoading && (
