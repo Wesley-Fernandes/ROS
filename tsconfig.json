@@ -18,9 +18,12 @@
       }
     ]
   },
+  "paths": {
+      "@/*": ["./*"]
+  },
   "include": [
     "src/**/*.ts",
     "test/**/*.ts",
     ".next/types/**/*.ts"
-, "src/components/providers/query-provider.tsx"  ]
+, "src/app/providers/query-provider.tsx"  ]
 }
