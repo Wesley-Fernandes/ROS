@@ -22,8 +22,8 @@ export default function Login() {
       });
   };
   return (
-    <Button onClick={login} className="border h-10 w-28 rounded-md shadow-md">
-      Login
+    <Button onClick={login} className="border h-10 w-28 rounded-md shadow-md" variant="outline">
+      <img src='/google.svg' alt='google'/> Login
     </Button>
   );
 }
